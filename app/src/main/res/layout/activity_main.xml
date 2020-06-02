@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="Enter 1st number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:text="Enter 2nd number"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/text1"
+        android:layout_alignBaseline="@+id/text1"
+        android:layout_marginRight="70dp"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text4"
+        android:layout_below="@+id/text3"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/text2"
+        android:layout_marginRight="70dp"
+        android:layout_alignBaseline="@+id/text2"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text2"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/addb"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addb"
+        android:layout_centerHorizontal="true"
+        android:text="RESET"
+        android:id="@+id/resetb"
+        android:textColor="@android:color/background_dark"/>
+
+
+
+
+</RelativeLayout>
